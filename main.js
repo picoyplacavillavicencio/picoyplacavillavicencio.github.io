@@ -66,11 +66,12 @@ require([
 
             queryTask.execute(query).then(function(result) {
                 if (result.features.length > 0) {
-                    alert("Ud está en zona de pico y placa");
+                    alert("Usted está en zona de pico y placa");
                 } else {
-                    alert("Ud no está en zona de pico y placa");
+                    alert("Usted no está en zona de pico y placa");
                 }
             });
+
         });
     });
 

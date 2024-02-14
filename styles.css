@@ -1,3 +1,4 @@
+/* Estilos generales */
 html, body, #viewDiv {
     padding: 0;
     margin: 0;
@@ -5,9 +6,50 @@ html, body, #viewDiv {
     width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+body {
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    background-color: #222;
+}
+
+/* Estilos para encabezados */
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #ddd;
+    text-align: center;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Estilos responsive para iPhone (incluyendo iPhone X y iPhone 11) */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    h1 {
+        font-size: 1.5em; /* Tamaño más pequeño para h1 en iPhone */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Tamaño más pequeño para h2 en iPhone */
+    }
+}
+
+/* Estilos para iPhone X */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
     body {
-        background-color: lightblue;
+        background-color: #123456;
     }
 
     .esri-legend__layer {
@@ -23,14 +65,134 @@ html, body, #viewDiv {
     }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 992px) {
+/* Estilos para iPhone 6/7/8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
     body {
-        background-color: lightgreen;
+        background-color: #654321;
+    }
+
+    .esri-legend__layer {
+        flex-direction: column;
+    }
+
+    .esri-legend__layer-label {
+        order: 2;
+    }
+
+    .esri-legend__layer-table {
+        order: 1;
     }
 }
 
-@media only screen and (min-width: 993px) {
+/* Estilos para Samsung Galaxy S5 */
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 640px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
     body {
-        background-color: lightyellow;
+        background-color: #abcdef;
+    }
+
+    .esri-legend__layer {
+        flex-direction: column;
+    }
+
+    .esri-legend__layer-label {
+        order: 2;
+    }
+
+    .esri-legend__layer-table {
+        order: 1;
+    }
+}
+
+/* Estilos para Google Pixel 2 */
+@media only screen 
+  and (min-device-width: 411px) 
+  and (max-device-width: 731px) 
+  and (-webkit-min-device-pixel-ratio: 2.5) { 
+    body {
+        background-color: #fedcba;
+    }
+
+    .esri-legend__layer {
+        flex-direction: column;
+    }
+
+    .esri-legend__layer-label {
+        order: 2;
+    }
+
+    .esri-legend__layer-table {
+        order: 1;
+    }
+}
+
+/* Estilos para iPhone 13 Pro Max */
+@media only screen 
+  and (min-device-width: 428px) 
+  and (max-device-width: 926px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    body {
+        background-color: #1a2b3c;
+    }
+
+    .esri-legend__layer {
+        flex-direction: column;
+    }
+
+    .esri-legend__layer-label {
+        order: 2;
+    }
+
+    .esri-legend__layer-table {
+        order: 1;
+    }
+}
+
+/* Estilos para iPhone 13/13 Pro */
+@media only screen 
+  and (min-device-width: 390px) 
+  and (max-device-width: 844px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    body {
+        background-color: #4d5e6f;
+    }
+
+    .esri-legend__layer {
+        flex-direction: column;
+    }
+
+    .esri-legend__layer-label {
+        order: 2;
+    }
+
+    .esri-legend__layer-table {
+        order: 1;
+    }
+}
+
+/* Estilos para iPhone 13 Mini */
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 780px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    body {
+        background-color: #7f8e9f;
+    }
+
+    .esri-legend__layer {
+        flex-direction: column;
+    }
+
+    .esri-legend__layer-label {
+        order: 2;
+    }
+
+    .esri-legend__layer-table {
+        order: 1;
     }
 }
