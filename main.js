@@ -91,7 +91,7 @@ require([
             return view.goTo(options.target);
         }
     });
-    view.ui.add(legend, "bottom-right");
+    view.ui.add(legend, "top-right");
     view.ui.add(homeWidget, "top-left");
     view.ui.add(locateWidget, "top-left");
     locateWidget.locate();
